@@ -1,3 +1,4 @@
+import { Button } from "keep-react";
 import LogoBuilding from "../assets/office-building.png"
 import { DropdownComponent } from "../utils/Dropdown";
 
@@ -15,10 +16,10 @@ const Header = () => {
         <DropdownComponent  />
       </ul>
 
-      <div className="">
+      <div className="flex gap-2 mx-12">
         {" "}
-        <button className="px-3 py-2 bg-green-400 font-bold  border rounded-lg mx-3 "> Login In </button>
-        <button className="px-3 py-2 bg-green-400 font-bold  border rounded-lg mr-60"> Sign Up </button>
+        <Button color="success">Sign up</Button>
+        <Button color="error">Log in</Button>
       </div>
     </nav>
   );
